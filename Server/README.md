@@ -12,12 +12,11 @@
  #### A PostgreSQL database.
 ## Installing
 #### 1. Clone the repository to your local machine:
-        git clone https://github.com/erenbesikcioglu07/SERVER-Personalized-News-Feed-Web-Application.git
-#### 2. Navigate to the project directory:
-        cd SERVER-Personalized-News-Feed-Web-Application
-#### 3. Install the project dependencies:
+        git clone https://github.com/erenbesikcioglu07/Case-Personalized-News-Feed-Web-Application.git
+        cd DT-CASE
+#### 2. Install the project dependencies:
         npm install
-#### 4. Fill the .env file in the root directory of the project and add your environment variables:   
+#### 3. Fill the .env file in the root directory of the project and add your environment variables:   
         DATABASE_URL="postgresql://<username>:<password>@localhost:5432/<database>?schema=public"
         PORT=5000
         JWT_SECRET=<your-jwt-secret>
@@ -27,7 +26,7 @@
         GUARDIAN_API_KEY=<your-guardian-api-key>
         GUARDIAN_API_URL=https://content.guardianapis.com
 
-#### 5. Run the project:        
+#### 4. Run the project:        
         npm start
 
 ## Features
