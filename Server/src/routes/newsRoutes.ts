@@ -1,8 +1,13 @@
-// import {Router} from 'express';
-// import { getCombinedNews } from '../newsApi/getCombinedNews'
-//
-// const authRoutes:Router = Router();
-//
-//
-//
-// export default authRoutes;
+import {Router} from 'express';
+import {newsApi} from "../controllers/newsApiController";
+import {isAuthenticated} from "../middlewares/isAuthenticated";
+
+
+
+const newsRoutes:Router = Router();
+
+newsRoutes.get('/newsApi',isAuthenticated, newsApi);
+
+
+
+export default newsRoutes;
